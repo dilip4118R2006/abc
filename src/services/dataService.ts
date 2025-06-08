@@ -62,6 +62,22 @@ class DataService {
           availableQuantity: 12,
           category: 'Single Board Computer',
           description: 'Model B 4Gb RAM Varient'
+        },
+        {
+          id: 'comp-7',
+          name: 'Breadboard 830 Points',
+          totalQuantity: 12,
+          availableQuantity: 12,
+          category: 'Prototyping',
+          description: 'Solderless breadboard for prototyping'
+        },
+        {
+          id: 'comp-8',
+          name: 'Ultrasonic Sensor HC-SR04',
+          totalQuantity: 12,
+          availableQuantity: 12,
+          category: 'Sensor',
+          description: 'Distance measuring sensor'
         }
       ],
       requests: [],
