@@ -54,6 +54,14 @@ class DataService {
           availableQuantity: 12,
           category: 'Microcontroller',
           description: 'WiFi and Bluetooth enabled microcontroller'
+        },
+        {
+          id: 'comp-6',
+          name: 'Raspberry Pi 4 ',
+          totalQuantity: 12,
+          availableQuantity: 12,
+          category: 'Single Board Computer',
+          description: 'Model B 4Gb RAM Varient'
         }
       ],
       requests: [],
