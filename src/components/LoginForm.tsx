@@ -75,7 +75,7 @@ const LoginForm: React.FC = () => {
                   value={email.replace('@issacasimov.in', '')}
                   onChange={(e) => handleNameChange(e.target.value)}
                   className="w-full pl-10 pr-4 py-3 bg-dark-700/50 border border-dark-600 rounded-lg text-white placeholder-dark-400 focus:border-peacock-500 focus:ring-2 focus:ring-peacock-500/20 transition-all duration-200"
-                  placeholder="eg: dilipkumar-ra-1015"
+                  placeholder="eg: dilipkumar-ra3-1015"
                   required
                 />
                 {email && email !== email.replace('@issacasimov.in', '') && (
@@ -141,7 +141,7 @@ const LoginForm: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.5 }}
             className="mt-6 text-center text-sm text-dark-400"
-          > <p>User id: "Your name"-"your Dept"-"last four digit of your Roll No"</p>
+          > <p>User id: "Your name"-"your Dept and year(in numbers)"-"last four digit of your Roll No"</p>
             <p>Password: issacasimov</p>
             
           </motion.div>
