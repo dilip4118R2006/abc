@@ -25,7 +25,7 @@ const AdminContact: React.FC = () => {
             </div>
             <div>
               <p className="text-peacock-300 text-sm">Email</p>
-              <p className="text-white font-medium">admin@issacasimov.in</p>
+              <p className="text-white font-medium">letsmaildilip@gmail.com</p>
             </div>
           </div>
 
@@ -35,7 +35,7 @@ const AdminContact: React.FC = () => {
             </div>
             <div>
               <p className="text-peacock-300 text-sm">Phone</p>
-              <p className="text-white font-medium">+91 9876543210</p>
+              <p className="text-white font-medium">+91 9361923327</p>
             </div>
           </div>
 
@@ -46,7 +46,7 @@ const AdminContact: React.FC = () => {
             <div>
               <p className="text-peacock-300 text-sm">Location</p>
               <p className="text-white font-medium">Isaac Asimov Robotics Laboratory</p>
-              <p className="text-peacock-300 text-sm">Ground Floor, Engineering Block</p>
+              <p className="text-peacock-300 text-sm">Ground Floor, D-Block</p>
             </div>
           </div>
 
@@ -55,9 +55,9 @@ const AdminContact: React.FC = () => {
               <Clock className="w-6 h-6 text-purple-400" />
             </div>
             <div>
-              <p className="text-peacock-300 text-sm">Office Hours</p>
-              <p className="text-white font-medium">Monday - Friday: 9:00 AM - 5:00 PM</p>
-              <p className="text-peacock-300 text-sm">Saturday: 9:00 AM - 1:00 PM</p>
+              <p className="text-peacock-300 text-sm">Lab Hours</p>
+              <p className="text-white font-medium">Tuesday - Saturday: 8:00 AM - 3:00 PM</p>
+              <p className="text-peacock-300 text-sm">Closed on Sundays and Mondays</p>
             </div>
           </div>
         </div>
@@ -65,9 +65,9 @@ const AdminContact: React.FC = () => {
         <div className="mt-8 p-4 bg-peacock-500/10 border border-peacock-500/20 rounded-lg">
           <h3 className="text-peacock-400 font-semibold mb-2">Important Notes:</h3>
           <ul className="text-peacock-300 text-sm space-y-1">
-            <li>• For urgent requests, please call during office hours</li>
+            <li>• For urgent requests, please come to lab</li>
             <li>• Email responses typically within 24 hours</li>
-            <li>• Component pickup available during office hours</li>
+            <li>• Component pickup available during lab hours</li>
           </ul>
         </div>
       </div>
