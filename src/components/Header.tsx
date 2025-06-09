@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { LogOut, Cpu } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import NotificationBell from './NotificationBell';
+import SyncStatus from './SyncStatus';
 
 const Header: React.FC = () => {
   const { user, logout } = useAuth();
@@ -30,6 +31,7 @@ const Header: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-4">
+            <SyncStatus />
             <NotificationBell />
             
             <div className="flex items-center gap-3">

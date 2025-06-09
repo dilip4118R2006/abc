@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Eye, EyeOff, User, Lock, Cpu } from 'lucide-react';
+import { Eye, EyeOff, User, Lock, Cpu, Cloud, Smartphone, Monitor } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 const LoginForm: React.FC = () => {
@@ -56,17 +56,47 @@ const LoginForm: React.FC = () => {
               <Cpu className="w-8 h-8 text-white" />
             </div>
             <h1 className="text-3xl font-bold text-white mb-2">Isaac Asimov</h1>
-            <p className="text-peacock-300">Robotics Lab </p>
+            <p className="text-peacock-300">Robotics Lab Management</p>
+          </motion.div>
+
+          {/* Cloud Sync Feature Highlight */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="mb-6 p-4 bg-gradient-to-r from-peacock-500/10 to-blue-500/10 border border-peacock-500/20 rounded-xl"
+          >
+            <div className="flex items-center gap-3 mb-2">
+              <Cloud className="w-5 h-5 text-peacock-400" />
+              <h3 className="text-peacock-300 font-semibold">Cloud Sync Enabled</h3>
+            </div>
+            <p className="text-peacock-300 text-sm mb-3">
+              Your data automatically syncs across all devices using the same email
+            </p>
+            <div className="flex items-center gap-4 text-xs text-peacock-400">
+              <div className="flex items-center gap-1">
+                <Smartphone className="w-3 h-3" />
+                <span>Phone</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <Monitor className="w-3 h-3" />
+                <span>Laptop</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <Cloud className="w-3 h-3" />
+                <span>Cloud</span>
+              </div>
+            </div>
           </motion.div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <motion.div
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 0.3, duration: 0.5 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
             >
               <label className="block text-peacock-300 text-sm font-medium mb-2">
-               User id
+                User ID
               </label>
               <div className="relative">
                 <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-peacock-400 w-5 h-5" />
@@ -89,7 +119,7 @@ const LoginForm: React.FC = () => {
             <motion.div
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
             >
               <label className="block text-peacock-300 text-sm font-medium mb-2">
                 Password
@@ -127,7 +157,7 @@ const LoginForm: React.FC = () => {
             <motion.button
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.5 }}
+              transition={{ delay: 0.6, duration: 0.5 }}
               type="submit"
               disabled={isLoading}
               className="w-full bg-gradient-to-r from-peacock-500 to-blue-500 text-white py-3 rounded-lg font-medium hover:from-peacock-600 hover:to-blue-600 focus:ring-2 focus:ring-peacock-500/20 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
@@ -139,11 +169,11 @@ const LoginForm: React.FC = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.5 }}
+            transition={{ delay: 0.7, duration: 0.5 }}
             className="mt-6 text-center text-sm text-dark-400"
-          > <p>User id: "Your name"-"your Dept and year(in numbers)"-"last four digit of your Roll No"</p>
+          >
+            <p>User ID: "Your name"-"your Dept and year(in numbers)"-"last four digit of your Roll No"</p>
             <p>Password: issacasimov</p>
-            
           </motion.div>
         </div>
       </motion.div>
